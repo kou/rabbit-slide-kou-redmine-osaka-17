@@ -285,7 +285,7 @@ Redmineを\n
     * 例：メールのthreadとプログラムのthreadは違う
     * 例：MroongaでMySQLも類似度向上
   * 回答の自動生成\n
-    (('note:LSTMを用いた機械翻訳とか'))
+    (('note:RNNを用いた機械翻訳とか'))
     * 類似issueの結論を探さなくてよい
 
 = データ活用に向けて
