@@ -172,7 +172,24 @@ Redmineを\n
     * GroongaまたはMroongaを含むが\n
       PostgreSQLは含まない
 
-= 高度な検索2：並び順の変更
+= 高度な検索2\nキーワード単位の優先度
+
+  * 重要語のスコアを上げ下げ
+  * 例：
+    * Groonga (>MySQL OR <PostgreSQL)
+    * 「GroongaとMySQL」または「GroongaとPostgresSQL」を含む
+    * MySQLの方がPostgreSQLより重要
+
+= 高度な検索2\nキーワード単位の優先度
+
+  * ノイズ語のスコアを下げる
+  * 例：
+    * Groonga ~MySQL
+    * Groongaを含む
+    * MySQLを含んでいてもヒットする
+    * MySQLを含むとスコアが下がる
+
+= 高度な検索3：並び順の変更
 
   * ソート対象：スコア・更新時刻
     * 従来：更新時刻のみ
